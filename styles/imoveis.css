@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&family=Roboto+Mono:ital,wght@0,500;1,500&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Permanent+Marker&family=Roboto+Mono:ital,wght@0,500;1,500&family=Shadows+Into+Light&display=swap');
+
+:root {
+    --azul-background: #141C31;
+    --marrom-telha: #9A502E;
+    --chave-cor: #191B19;
+    --azul-fonte: #84B1E0;
+    --branco-fonte: #E4E6E5;
+
+    --fonte-destaque: "Roboto Mono", monospace;
+    --fonte-normal: "Open Sans", sans-serif;;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--azul-background);
+}
+
+header#container-cabecalho {
+    background-color: var(--azul-fonte);
+    padding: 2px;
+    min-width: 97%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+ul#container-itens-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+    list-style-type: none;
+    list-style-position: inside;
+    columns: 4;
+}
+
+ul#container-itens-menu a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+
+ul#container-itens-menu a:focus {
+    background-color: var(--branco-fonte);
+    border-radius: 10px;
+    padding: 10px;
+    transition-duration: 0.8s;
+} 
+
+main {
+    background-color: var(--branco-fonte);
+    min-width: 97%;
+    margin: 0;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid var(--azul-fonte);
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.397);
+}
+
+section#container-resumo-imoveis {
+    background-color: transparent;
+    min-width: 100%;
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#container-informacoes-imovel {
+    background-color: var(--marrom-telha);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding: 2px;
+    border-radius: 50px;
+    margin: 0px 0px 15px;
+}
+
+div#container-informacoes-imovel span {
+    display: flex;
+    flex-wrap: 1;
+    margin: 0 10px;
+    font-family: var(--fonte-destaque);
+    font-size: 1.9em;
+    color: var(--branco-fonte);
+}
+
+ul#container-botoes-filtro {
+    display: flex;
+    width: 98%;
+    justify-content: space-around;
+    padding-bottom: 5px;
+    list-style-type: none;  
+}
+

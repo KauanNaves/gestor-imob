@@ -4,41 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ImobGestor</title>
+    <link rel="stylesheet" href="../styles/imoveis.css">
 </head>
 <body>
     <header id="container-cabecalho">
         <nav id="container-menu">
-            <ul>
+            <ul id="container-itens-menu">
                 <li class="itens-menu">
                     <a href="#" target="_self">
-                         <img src="#" alt="Ícone página imóveis">
-                         Imóveis
+                         <img src="../images/icon_imoveis.svg" alt="Ícone página imóveis">
                     </a>
                 </li>
                 <li class="itens-menu">
                     <a href="#" target="_self"> 
-                        <img src="#" alt="Ícone página financeiro">
-                        Financeiro
+                        <img src="../images/icon_financeiro.svg" alt="Ícone página financeiro">
                     </a>
                 </li>
-                <li class="itens-menu"><a href="#" target="_self"> 
-                    <img src="#" alt="Ícone página clientes">
-                    Clientes
-                </a>
+                <li class="itens-menu">
+                    <a href="#" target="_self"> 
+                        <img src="../images/icon_clientes.svg" alt="Ícone página clientes">
+                    </a>
             </li>
-                <li class="itens-menu"><a href="#" target="_self"> 
-                    <img src="#" alt="Ícone página adicionar imóveis">
-                    Add Imóvel
-                </a>
+                <li class="itens-menu">
+                    <a href="#" target="_self"> 
+                        <img src="../images/icon_add_imovel.svg" alt="Ícone página adicionar imóveis">
+                    </a>
             </li>
             </ul>
         </nav>
     </header>
-    <main id="container-principal">
+    <main>
         <section id="container-resumo-imoveis">
-            <img src="#" alt="Foto 1° imóvel selecionado">
-            <span id="span-qntd-imoveis">X</span> <span id="span-tipo-imóvel">N</span>
-            <ul>
+            <div id="container-informacoes-imovel">
+                <span id="span-qntd-imoveis">X</span> <span id="span-tipo-imóvel">CASAS</span>
+            </div>
+            <ul id="container-botoes-filtro">
                 <li>
                     <button class="botao-tipo-imovel">Casas</button>
                 </li>
@@ -54,19 +54,40 @@
             </ul>
         </section>
         <section id="container-imoveis-cadastrados">
-            <div id="container-cabecalho-imoveis-cadastrados">
+            <header id="container-cabecalho-imoveis-cadastrados">
                 <h3 id="titulo">Imóveis cadastrados</h3>
                 <a href="#">Ver todos</a>
-            </div>
-            <div id="container-principal-imoveis-cadastrados">
+            </header>
+            <article id="container-principal-imoveis-cadastrados">
                 <span id="informacoes-imovel-atual">XNX</span>
                 <img src="#" alt="Foto imóvel atual">
-            </div>
-            <div id="container-rodape-imoveis-cadastrados">
+            </article>
+            <footer id="container-rodape-imoveis-cadastrados">
                 <button class="botao-carrossel-imagens">Voltar</button>
-                <p>Quantidade imagens bolinhas (ainda não sei fazer)</p>
+                <ul>
+                    <li class="itens-navegacao-carrossel-imagens">
+                        <a href="#">
+                            <img src="#" alt="Ícone bolinha">
+                        </a>
+                    </li>
+                    <li class="itens-navegacao-carrossel-imagens">
+                        <a href="#">
+                            <img src="#" alt="Ícone bolinha">
+                        </a>
+                    </li>
+                    <li class="itens-navegacao-carrossel-imagens">
+                        <a href="#">
+                            <img src="#" alt="Ícone bolinha">
+                        </a>
+                    </li>
+                    <li class="itens-navegacao-carrossel-imagens">
+                        <a href="#">
+                            <img src="#" alt="Ícone bolinha">
+                        </a>
+                    </li>
+                </ul>
                 <button class="botao-carrossel-imagens">Próximo</button>
-            </div>
+            </footer>
         </section>
     </main>
 </body>
